@@ -1,24 +1,9 @@
-# Compiled Object files
-*.o
-*.obj
+# API's private key
+*.env
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# dependencies
+/node_modules
 
-# Compiled Static libraries
-*.a
-*.lib
+# production
+/dist
 
-# Executables
-*.exe
-
-# DUB
-.dub
-docs.json
-__dummy.html
-docs/
-
-# Code coverage
-*.lst
