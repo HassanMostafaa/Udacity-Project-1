@@ -28,6 +28,7 @@ About the API's key It must be in an .env file with a var name `API_KEY` beucase
 ## Deployment
 I used a different repository to deploy the app because it was required to add dist folder in the .gitignore so I couldn't use the production folder in this repo 
 > Link to the hosted repository https://github.com/HassanMostafaa/Udacity-Project-1-deploy
+
 > Demo via **Netlify** : https://articles-evaluation.netlify.app/ 
 
 ---
