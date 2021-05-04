@@ -29,4 +29,4 @@ I used a different repository to deploy the app because it was required to add d
 
 ---
 
-[App Screenshot](appSS.png)
+![App Screenshot](appSS.png)
