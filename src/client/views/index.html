@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="https://cdn.freebiesupply.com/logos/large/2x/udacity-logo-png-transparent.png"
+    />
+    <title>Sentiment Analyzer</title>
+  </head>
+
+  <body>
+    <main>
+      <img
+        src="https://cdn.freebiesupply.com/logos/large/2x/udacity-2-logo-png-transparent.png"
+        alt=""
+      />
+
+      <div>
+        <h1>
+          Evaluate a News Article with Natural Language Processing - Project
+        </h1>
+        <p>
+          Enter a URL of an <strong class="strong">Article</strong> or a
+          <strong class="strong">Blog</strong> to discover its Sentiment.
+        </p>
+        <section>
+          <form id="form">
+            <label for="article-url">URL</label>
+            <input
+              id="article-url"
+              type="text"
+              name="input"
+              value=""
+              placeholder="Enter Article URL here"
+            />
+
+            <button type="submit" id="btn-submit">
+              Submit
+            </button>
+          </form>
+        </section>
+        <div class="errors"></div>
+        <section class="resultsSection">
+          <img
+            class="loading"
+            src="https://i.imgur.com/1nz9QC4.gif"
+            style="margin: 10px auto;"
+            alt="loading"
+          />
+          <h3 class="result"></h3>
+          <div class="result" id="text"></div>
+          <div class="result" id="agreement"></div>
+          <div class="result" id="subjectivity"></div>
+          <div class="result" id="confidence"></div>
+          <div class="result" id="irony"></div>
+          <div class="result" id="score_tag"></div>
+          <div class="result" id="errMsg"></div>
+          <div class="failedToFetch"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      Udacity&copy; Project - Evaluate a News Article with Natural Language
+      Processing - May 2020
+      <div class="float">by : Hassan Mostafa</div>
+    </footer>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>

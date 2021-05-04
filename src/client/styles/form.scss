@@ -1,0 +1,81 @@
+form {
+    border: 1px solid #05b3e336;
+    border-radius: 3px;
+    padding: 20px;
+   background:#f4f4f4c4;
+    margin: 20px auto;
+    box-shadow: 0 0 15px #05b3e338;
+    max-width: 700px;
+    text-align: left;
+
+    
+    input ,button{
+        padding: 13px;
+        width: 100%;
+        line-height: 16px;
+        margin: 10px 0;
+        font-weight: 600;
+        color: #333;
+        border: none;
+        transition: .3s background-color ,.5s letter-spacing ;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+    button:hover{
+        background-color: #fff;
+        transition: .3s background-color ,.2s letter-spacing ;
+        outline: 1px solid rgba(0,0,0,.2);
+        letter-spacing: 2px;
+    }
+    input:focus{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.151);
+    }
+}
+
+
+.float{
+    float: right;
+}
+.strong{
+    font-weight: 600;
+    color: #05b3e3;
+}
+
+//phone
+@media only screen and (max-width: 515px) {
+    form {
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 3px;
+        padding: 20px;
+       background:#f4f4f4;
+        margin: 20px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.112);
+        max-width: 100%;
+        text-align: left;
+    
+        
+        input ,button{
+            padding: 10px;
+            width: 100%;
+            line-height: 16px;
+            margin: 10px 0;
+            border: none;
+            transition: .3s background-color;
+            border-bottom: 1px solid rgba(0,0,0,.2);
+        }
+        button:hover{
+            background-color: #fff;
+            transition: .3s background-color ;
+            border: 1px solid rgba(0,0,0,.2);
+        }
+    }
+    
+    
+}
+
+// tablet
+@media only screen and (max-width: 990px) {
+}
+
+// desktop
+@media only screen and (min-width: 901px) {
+}
